@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:
+        linear-gradient(rgba(5,15,35,.75), rgba(5,15,35,.85)),
+        url("https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top,#021321,#0a2748,#193d63);
+}
+
+.login-container{
+    position:relative;
+    z-index:2;
+    width:380px;
+    padding:40px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:18px;
+    backdrop-filter:blur(15px);
+    text-align:center;
+    color:#fff;
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+}
+
+.login-container h1{
+    color:#ffffff;
+    margin-bottom:10px;
+    font-size:32px;
+}
+
+.login-container p{
+    color:#d8d8d8;
+    margin-bottom:25px;
+}
+
+.login-container input{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    background:rgba(255,255,255,.18);
+    color:white;
+    font-size:15px;
+    outline:none;
+}
+
+.login-container input::placeholder{
+    color:#ddd;
+}
+
+.login-container button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    background:#c8102e;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-container button:hover{
+    background:#ef233c;
+    transform:scale(1.03);
+}
+
+.links{
+    margin-top:18px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.links a{
+    color:#ffffff;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.links a:hover{
+    color:#ff4d6d;
+}
+
+.skyline{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:140px;
+    background:
+    linear-gradient(to top,#000,#222);
+    clip-path:polygon(
+        0% 100%,
+        0% 65%,
+        5% 60%,
+        8% 40%,
+        12% 60%,
+        18% 50%,
+        24% 70%,
+        30% 35%,
+        36% 70%,
+        45% 45%,
+        55% 65%,
+        62% 30%,
+        68% 70%,
+        76% 50%,
+        82% 65%,
+        90% 35%,
+        95% 55%,
+        100% 45%,
+        100% 100%
+    );
+    opacity:.9;
+}
